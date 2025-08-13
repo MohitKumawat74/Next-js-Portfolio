@@ -1,6 +1,8 @@
 "use client";
 
+
 import React from 'react'
+import Image from 'next/image';
 
 const Aboutpage = () => {
   return (
@@ -8,13 +10,21 @@ const Aboutpage = () => {
       
    <div className="about flex justify-between items-center mx-32 mt-20">
         <div className="left ">
-          <img src="https://marketifythemes.net/html/grax/img/about/1.jpg" alt="" className='object-cover w-[400px] h-[500px] ml-5 contain-content rounded-[10px]' data-aos="fade-right" />
+          <Image 
+            src="https://marketifythemes.net/html/grax/img/about/1.jpg" 
+            alt="About Alan Walker" 
+            width={400}
+            height={500}
+            className='object-cover w-[400px] h-[500px] ml-5 contain-content rounded-[10px]'
+            data-aos="fade-right"
+            priority
+          />
         </div>
         <div className="right pt-15 ">
 
           <span className='abt uppercase' data-aos="zoom-in-left">About</span>
           <span className='abt uppercase ml-4' data-aos="zoom-in-left">Me</span>
-          <p className='mt-4 text-lg mr-3 text-gray-400 tracking-widest'  data-aos="zoom-in-left" data-aos-delay="2000s">Hello! I'm Alan Walker. I'm a web developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+          <p className='mt-4 text-lg mr-3 text-gray-400 tracking-widest'  data-aos="zoom-in-left" data-aos-delay="2000s">Hello! I&apos;m Alan Walker. I&apos;m a web developer, and I&apos;m very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
 
           <div className="points mt-5 flex flex-1/2 justify-between">
             <p className='text-xl font-semibold' data-aos="zoom-in-right">👉 Web Development</p>

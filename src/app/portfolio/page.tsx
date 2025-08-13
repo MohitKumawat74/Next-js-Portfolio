@@ -1,6 +1,8 @@
 "use client";
 
+
 import React from 'react'
+import Image from 'next/image';
 
 const page = () => {
     return (
@@ -10,14 +12,14 @@ const page = () => {
                 <span className='abt uppercase ml-4' data-aos="zoom-in-left">Works</span>
                 <div className="image flex col-3 justify-between items-center mt-10">
 
-                    <img src="https://marketifythemes.net/html/grax/img/portfolio/1.jpg" alt="" className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-right" />
-                    <img src="https://marketifythemes.net/html/grax/img/portfolio/2.jpg" alt="" className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-up" />
-                    <img src="https://marketifythemes.net/html/grax/img/portfolio/3.jpg" alt="" className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-left" />
+                    <Image src="https://marketifythemes.net/html/grax/img/portfolio/1.jpg" alt="Portfolio 1" width={300} height={300} className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-right" />
+                    <Image src="https://marketifythemes.net/html/grax/img/portfolio/2.jpg" alt="Portfolio 2" width={300} height={300} className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-up" />
+                    <Image src="https://marketifythemes.net/html/grax/img/portfolio/3.jpg" alt="Portfolio 3" width={300} height={300} className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-left" />
                 </div>
                 <div className="image flex col-3 justify-between items-center mt-10 mb-10">
-                    <img src="https://marketifythemes.net/html/grax/img/portfolio/4.jpg" alt="" className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-right" />
-                    <img src="https://marketifythemes.net/html/grax/img/portfolio/5.jpg" alt="" className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-up" />
-                    <img src="https://marketifythemes.net/html/grax/img/portfolio/6.jpg" alt="" className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-left" />
+                    <Image src="https://marketifythemes.net/html/grax/img/portfolio/4.jpg" alt="Portfolio 4" width={300} height={300} className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-right" />
+                    <Image src="https://marketifythemes.net/html/grax/img/portfolio/5.jpg" alt="Portfolio 5" width={300} height={300} className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-up" />
+                    <Image src="https://marketifythemes.net/html/grax/img/portfolio/6.jpg" alt="Portfolio 6" width={300} height={300} className='w-[300px] h-[300px] rounded-lg object-cover hover:opacity-75 hover:blur-[3px] transition-all ease-in-out hover:cursor-pointer' data-aos="fade-left" />
                 </div>
                 <div className="down flex justify-between items-center gap-32  mt-20 mb-15">
                     <div className="leftportfolio w-[50%]">
@@ -51,7 +53,7 @@ const page = () => {
 
 
             <div className="bottom flex justify-between items-center mt-20  bg-gray-500 py-15 px-32 ">
-                <h1 className='text-2xl font-bold'>I'm available for freelance work</h1>
+                <h1 className='text-2xl font-bold'>I&apos;m available for freelance work</h1>
                 <p className='font-poppins text-lg'>Contact Me</p>
             </div>
             

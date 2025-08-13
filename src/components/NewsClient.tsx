@@ -1,6 +1,8 @@
 "use client";
 
+
 import React, { useEffect } from 'react';
+import Image from 'next/image';
 
 // Define the type for the article prop
 interface Article {
@@ -24,9 +26,9 @@ const NewsClient = ({ article }: { article: Article }) => {
     <div className="news-article flex justify-center items-center flex-col p-4 bg-gray-100 rounded-lg shadow-md mt-52">
       <h1>{article.title || 'No title available'}</h1>
       {article.images && article.images.length > 0 ? (
-        <img className='w-[300px] h-auto rounded-lg shadow-md' src={article.images[0]} alt={article.title} />
+        <Image className='w-[300px] h-auto rounded-lg shadow-md' src={typeof article.images === 'string' ? article.images : article.images[0]} alt={article.title} width={300} height={200} />
       ) : article.img ? (
-        <img className='w-[300px] h-auto rounded-lg shadow-md' src={article.img} alt={article.title} />
+        <Image className='w-[300px] h-auto rounded-lg shadow-md' src={article.img} alt={article.title} width={300} height={200} />
       ) : (
         <p>No image available</p>
       )}
