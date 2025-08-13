@@ -30,7 +30,7 @@ export default function PostFormPage() {
         body: JSON.stringify(newPost),
       });
 
-      const data = await res.json();
+  await res.json();
 
       if (res.ok) {
         setMessage('Post created successfully!');
