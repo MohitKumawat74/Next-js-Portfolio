@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Post 1",
+      "body": "This is the content of post 1.",
+      "createdAt": "2025-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "Post 2",
+      "body": "This is the content of post 2.",
+      "createdAt": "2025-02-01T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "title": "Post 3",
+      "body": "This is the content of post 3.",
+      "createdAt": "2025-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "title": "Post 4"
+    },
+    {
+      "id": "5",
+      "title": "New Post 5",
+      "body": "Badmashi Nhi Mitar\n",
+      "createdAt": "0025-04-21"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": 1,
+      "author": "Alice",
+      "body": "Great post! Really enjoyed reading it.",
+      "createdAt": "2025-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "postId": 2,
+      "author": "Bob",
+      "body": "Very informative, thanks for sharing!",
+      "createdAt": "2025-02-02T00:00:00.000Z"
+    }
+  ],
+  "profile": {
+    "name": "John Doe",
+    "bio": "A passionate web developer.",
+    "website": "https://john-doe.dev"
+  },
+
+  "getapi":
+  [ {
+    "id": 1,
+    "post" : "First Post",
+    "body": "This is the content of the first post.",
+    "message": "This is a message for the first post.",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "post" : "Second Post",
+    "body": "This is the content of the second post.",
+    "message": "This is a message for the second post.",
+    "createdAt": "2025-02-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "post" : "Third Post",
+    "body": "This is the content of the third post.",
+    "message": "This is a message for the third post.",
+    "createdAt": "2025-03-01T00:00:00.000Z"
+  }
+
+],
+  "postapi": {
+    "id": 1,
+    "post" : "First Post",
+    "body": "This is the content of the first post.",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  }
+
+}
