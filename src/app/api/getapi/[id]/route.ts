@@ -1,10 +1,11 @@
-import { NextResponse } from 'next/server';
+
+import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(
-  _req: Request,
+  request: NextRequest,
   { params }: { params: { id: string } }
 ) {
-  return fetch(`http://localhost:3000/api/getapi/${params.id}`)
-    .then(res => res.json())
-    .then(data => NextResponse.json(data));
+  const res = await fetch(`http://localhost:3000/api/getapi/${params.id}`);
+  const data = await res.json();
+  return NextResponse.json(data);
 }
